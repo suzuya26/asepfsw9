@@ -1,5 +1,5 @@
 class ApplicationError extends Error {
-  get details() {
+  static details() {
     return {};
   }
 
@@ -9,8 +9,8 @@ class ApplicationError extends Error {
         name: this.name,
         message: this.message,
         details: this.details,
-      }
-    }
+      },
+    };
   }
 }
 
